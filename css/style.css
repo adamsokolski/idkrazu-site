@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  height: 100%;
+  font-family: "Raleway";
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 100px;
+}
+header li {
+  padding: 10px;
+}
+
+header h1 {
+  margin-left: 20px;
+}
+
+header h1 span {
+  color: rgb(128, 233, 119);
+}
+
+header nav a {
+  font-size: 19px;
+  padding-bottom: 2px;
+}
+
+header nav a:hover {
+  border-bottom: 2px rgb(128, 233, 119) solid;
+}
+
+.banner {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background: url("../img/img1.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.banner h2 {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 1000px;
+  margin: 50px auto 100px;
+}
+
+article h2 {
+  font-size: 40px;
+}
+
+article h2::before {
+  content: "";
+  background-color: rgb(128, 233, 119);
+  height: 0.9em;
+  width: 2em;
+  position: absolute;
+  z-index: -1;
+  top: inherit;
+}
+
+article p {
+  line-height: 1.5em;
+  word-spacing: 0.12em;
+  text-indent: 2em;
+}
+
+article a {
+  margin: 10px;
+  color: black;
+}
+
+.img-article {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  color: rgb(175, 175, 175);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+footer p {
+  padding: 5px;
+}
+footer ul {
+  display: flex;
+  margin: 5px auto;
+  list-style-type: none;
+  padding: 5px;
+}
+footer li {
+  padding: 3px 10px;
+}
+footer a:hover {
+  color: rgb(128, 233, 119);
+  transition: 0.2s;
+}
