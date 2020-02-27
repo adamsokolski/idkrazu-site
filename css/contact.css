@@ -1,3 +1,25 @@
 .contact ul {
   list-style-type: none;
 }
+
+.contact a {
+  font-size: 22px;
+}
+
+.contact li {
+  padding: 3px;
+}
+
+.contact a:hover {
+  color: rgb(128, 233, 119);
+  transition: 0.2s;
+}
+
+@media (max-width: 1001px) {
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
