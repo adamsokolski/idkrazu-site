@@ -75,13 +75,20 @@ header nav a:hover {
 main {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   max-width: 1000px;
   margin: 50px auto 100px;
 }
 
 article h2 {
   font-size: 40px;
+}
+
+article {
+  width: 50%;
+  padding: 10px;
 }
 
 article h2::before {
@@ -106,7 +113,7 @@ article a {
 }
 
 .img-article {
-  width: 100%;
+  width: 50%;
 }
 
 footer {
@@ -133,4 +140,33 @@ footer li {
 footer a:hover {
   color: rgb(128, 233, 119);
   transition: 0.2s;
+}
+.current-page {
+  border-bottom: 2px rgb(128, 233, 119) solid;
+}
+
+@media (max-width: 1001px) {
+  article {
+    width: 100%;
+  }
+  main {
+    flex-direction: column;
+  }
+  .banner {
+    height: 250px;
+  }
+  header {
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+  }
+  header ul {
+    padding: 0;
+  }
+  footer {
+    font-size: 14px;
+  }
+  article h2 {
+    text-align: center;
+  }
 }
