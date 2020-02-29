@@ -92,6 +92,7 @@ main {
 
 article {
   padding: 10px;
+  width: 100%;
 }
 
 article h2 {
