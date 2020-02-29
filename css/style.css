@@ -68,7 +68,6 @@ header nav a:hover {
   position: relative;
   height: 500px;
   width: 100%;
-  background: url("../img/img1.jpg");
   background-size: 100%;
   background-attachment: fixed;
 }
@@ -200,5 +199,17 @@ footer a:hover {
   }
   footer ul {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1002px) {
+  .banner {
+    background-image: url(../img/img-1920.jpg);
+  }
+}
+
+@media (min-width: 2501px) {
+  .banner {
+    background-image: url(../img/img-3840.jpg);
   }
 }
