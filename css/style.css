@@ -39,6 +39,7 @@ header ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-right: 100px;
 }
@@ -154,19 +155,22 @@ footer a:hover {
 }
 
 @media (max-width: 1001px) {
+  .banner {
+    display: none;
+  }
   article {
     width: 100%;
   }
   main {
     flex-direction: column;
   }
-  .banner {
-    height: 250px;
-  }
   header {
     flex-direction: column;
     justify-content: center;
     padding: 50px;
+  }
+  nav ul a {
+    font-size: 16px;
   }
   header ul {
     padding: 0;
@@ -176,5 +180,19 @@ footer a:hover {
   }
   article h2 {
     text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    height: auto;
+    padding: 5px;
+  }
+  footer {
+    height: auto;
+    flex-direction: column;
+  }
+  footer ul {
+    flex-direction: column;
   }
 }
