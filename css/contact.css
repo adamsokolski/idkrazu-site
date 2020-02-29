@@ -1,3 +1,7 @@
+.contact-page article {
+  width: unset;
+}
+
 .contact-page ul {
   list-style-type: none;
 }

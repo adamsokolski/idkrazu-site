@@ -3,9 +3,11 @@
   padding: 0;
   margin: 0;
 }
+
 html {
   height: 100%;
 }
+
 body {
   min-height: 100%;
   display: flex;
@@ -34,6 +36,7 @@ header {
   top: 0;
   z-index: 1;
 }
+
 header ul {
   list-style: none;
   display: flex;
@@ -43,6 +46,7 @@ header ul {
   justify-content: space-around;
   padding-right: 100px;
 }
+
 header li {
   padding: 10px;
 }
@@ -134,22 +138,27 @@ footer {
   align-items: flex-end;
   flex-shrink: 0;
 }
+
 footer p {
   padding: 5px;
 }
+
 footer ul {
   display: flex;
   margin: 5px auto;
   list-style-type: none;
   padding: 5px;
 }
+
 footer li {
   padding: 3px 10px;
 }
+
 footer a:hover {
   color: rgb(128, 233, 119);
   transition: 0.2s;
 }
+
 .current-page {
   border-bottom: 2px rgb(128, 233, 119) solid;
 }
