@@ -91,22 +91,13 @@ main {
   flex: 1 0 auto;
 }
 
-article h2 {
-  font-size: 40px;
-}
-
 article {
-  width: 50%;
   padding: 10px;
 }
 
-article h2::before {
-  content: "";
-  background-color: rgb(128, 233, 119);
-  height: 0.9em;
-  width: 2em;
-  position: absolute;
-  z-index: -1;
+article h2 {
+  font-size: 40px;
+  display: inline-block;
 }
 
 article p {
@@ -116,8 +107,17 @@ article p {
 }
 
 article a {
-  margin: 10px;
   color: black;
+  border-bottom: 1px black solid;
+}
+
+article a:hover {
+  text-decoration: none;
+  border-bottom: 2px rgb(128, 233, 119) solid;
+}
+
+.home-page {
+  width: 50%;
 }
 
 .img-article {
@@ -158,8 +158,14 @@ footer a:hover {
   .banner {
     display: none;
   }
+  .home-page {
+    width: 100%;
+  }
   article {
     width: 100%;
+  }
+  .home-page h2 {
+    text-align: center;
   }
   main {
     flex-direction: column;
@@ -178,8 +184,8 @@ footer a:hover {
   footer {
     font-size: 14px;
   }
-  article h2 {
-    text-align: center;
+  .img-article {
+    width: 100%;
   }
 }
 

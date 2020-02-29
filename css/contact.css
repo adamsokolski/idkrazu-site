@@ -1,16 +1,22 @@
-.contact ul {
+.contact-page ul {
   list-style-type: none;
 }
-
-.contact a {
-  font-size: 22px;
+.contact-page h2 {
+  font-size: 30px;
 }
 
-.contact li {
+.contact-page a {
+  font-size: 22px;
+  color: black;
+  text-decoration: none;
+  border: none;
+}
+
+.contact-page li {
   padding: 3px;
 }
 
-.contact a:hover {
+.contact-page a:hover {
   color: rgb(128, 233, 119);
   transition: 0.2s;
 }
