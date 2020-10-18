@@ -68,21 +68,6 @@ header nav a:hover {
   border-bottom: 2px rgb(128, 233, 119) solid;
 }
 
-.banner {
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background-size: 100%;
-  background-attachment: fixed;
-}
-
-.banner h2 {
-  color: white;
-  text-align: center;
-  padding-top: 50px;
-  font-size: 40px;
-}
-
 main {
   display: flex;
   flex-direction: row;
@@ -164,9 +149,6 @@ footer a:hover {
 }
 
 @media (max-width: 1001px) {
-  .banner {
-    display: none;
-  }
   .home-page {
     width: 100%;
   }
@@ -209,17 +191,5 @@ footer a:hover {
   }
   footer ul {
     flex-direction: column;
-  }
-}
-
-@media (min-width: 1002px) {
-  .banner {
-    background-image: url(../img/img-1920.jpg);
-  }
-}
-
-@media (min-width: 2501px) {
-  .banner {
-    background-image: url(../img/img-3840.jpg);
   }
 }
