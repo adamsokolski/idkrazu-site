@@ -105,6 +105,12 @@ article a:hover {
   border-bottom: 2px rgb(128, 233, 119) solid;
 }
 
+.link:hover {
+  text-decoration: none;
+  color: rgb(128, 233, 119);
+  transition: 200ms;
+}
+
 .home-page {
   width: 50%;
 }

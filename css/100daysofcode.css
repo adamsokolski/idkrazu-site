@@ -9,6 +9,10 @@
   margin-bottom: 10px;
 }
 
+.days-page a {
+  color: black;
+}
+
 .title-date {
   font-size: 18px;
   font-weight: normal;
